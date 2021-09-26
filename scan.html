@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Food Scanner 2</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/e759a20b40.js" crossorigin="anonymous"></script>
+
+  <!-- CSS & Bootstrap Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap Java Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+  <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-heartbeat"></i>   Food Scanner</a>
+      </nav>
+
+    </div>
+
+  </section>
+
+  <!-- Scanbox -->
+      <section class="colored-section" id="scanbox">
+
+        <div class="container">
+          <input class = "button" style="font-size: 1em" type="file" id="imageFile" accept="image/*" />
+          <img id='searchImg' src=''>
+        </div>
+        <p class = "nutritionFacts" data-json=""><br>Name: <span id='res'></span><br>Calories: <br>Total Fat: <br>Cholesterol: <br>Sodium: <br>Potassium: <br>Total Carbohydrates: <br>Protein: <br>Freshness: </p>
+
+      </section>
+
+  <!-- Footer -->
+
+      <footer class="white-section" id="footer">
+
+        <div class="container-fluid">
+          <i class="social-icon fab fa-twitter"></i>
+          <i class="social-icon fab fa-facebook"></i>
+          <i class="social-icon fab fa-instagram "></i>
+          <i class="social-icon fas fa-envelope"></i>
+          <p style="color: #8f8f8f;">© Copyright 2021 Food Scanner Inc. All rights reserved.</p>
+        </div>
+
+      </footer>
+
+      <script src='app.js'></script>
+
+</body>
+
+</html>

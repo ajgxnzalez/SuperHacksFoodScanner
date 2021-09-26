@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Food Scanner</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/e759a20b40.js" crossorigin="anonymous"></script>
+
+  <!-- CSS & Bootstrap Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap Java Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+  <section class="colored-section" id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><i class="fas fa-heartbeat"></i>   Food Scanner</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cta">Download</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Get Back To A Healthier Lifestyle!</h1>
+          <p>Health Starts With What You Eat.</p>
+          <a type="button" class="btn btn-dark btn-lg download-button" href='scan.html'><i class="fas fa-image"></i> Upload to Scan </a>
+        </div>
+        <div class="title-image-container col-lg-6">
+          <img class="title-image" src="images/mockup.png" alt="iphone-mockup">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- About -->
+
+  <section class="white-section" id="about">
+
+    <div class="container-fluid">
+      <h3 class="big-heading">About Us.</h3>
+      <p style="color: #8f8f8f;">Food waste created yearly amounts to hundreds of billions pounds in the US alone and is disposed of in landfills.
+        This poses a problem aggregated not only by the non-biodegradable debris, but the food itself contributes to the emission of green house gasses as a result of rotting.
+        We are addressing this issue by designing a system that reduces waste and furthermore helps users to make informed decisions about their health. <br><br>
+        Users can take a picture of your food and upload it to our website.
+        The system will scan and detect the name of your food and offer nutritional information as well as determine if a food is safe to eat or rotten.
+        Our goal strives to both better ourselves while bettering the environment.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section class="white-section" id="press">
+    <h3>As Seen On</h3>
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="colored-section" id="features">
+
+    <div class="container-fluid">
+
+      <h3 class="big-heading">Features.</h3>
+
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-check-circle fa-4x"></i>
+          <h3 class="feature-title">Set Your Desired Targets.</h3>
+          <p>Choose your desired weekly weight loss rate, target date, and source of calories like fat, carbs, and proteins.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-camera fa-4x"></i>
+          <h3 class="feature-title">Scan To Log Your Meals.</h3>
+          <p>Use our proprietary scanning technology to track your food and nutrients. Log ahead of time for better planning and scheduling.</p>
+        </div>
+
+        <div class="feature-box col-lg-4">
+          <i class="icon fas fa-bullseye fa-4x"></i>
+          <h3 class="feature-title">Reach Your Goals More Easily.</h3>
+          <p>Monitor your daily progress, check your weight loss forecast, and receive ongoing advice and feedback.</p>
+        </div>
+
+      </div>
+
+  </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+
+    <div class="container-fluid">
+      <h3 class="big-heading">Being Healthy Has Never Been Easier.</h3>
+      <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+
+    <div class="container-fluid">
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-facebook"></i>
+      <i class="social-icon fab fa-instagram "></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p style="color: #8f8f8f;">© Copyright 2021 Food Scanner Inc. All rights reserved.</p>
+    </div>
+
+  </footer>
+
+  <script src='app.js'></script>
+
+</body>
+
+</html>
